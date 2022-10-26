@@ -1,6 +1,7 @@
 :root {
     --color-principal: #4361ee;
     --color-secundario: #c1dff0;
+    --blanco: #fff;
 }
 
 html {
@@ -29,10 +30,7 @@ body {
 
 a { text-decoration: none; }
 
-h1 {
-    font-size: 5rem;
-}
-
+h1 { font-size: 6rem; }
 h2 { font-size: 4rem; }
 h3 { font-size: 3.2rem; }
 h4 { font-size: 2.8rem; }
@@ -83,7 +81,8 @@ img { max-width: 100%; }
 }
 
 .logo__nombre {
-    font-weight: 400;
+    font-weight: 800;
+    color: var(--blanco);
 }
 
 .logo__bold {
@@ -188,9 +187,9 @@ img { max-width: 100%; }
 }
 
 .footer {
-    background-color: var(--negro);
-    margin-top: 4rem;
-    padding-bottom: 2rem;
+    background-color: var(--color-principal);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 /* SOBRE NOSOTROS */
