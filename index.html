@@ -1,14 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acapulco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Acapulco</h1>
-</body>
-</html>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto titulo">Acapulco</h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="#" class="navegacion__enlace">Playas</a>
+                    <a href="#" class="navegacion__enlace">Parques</a>
+                </nav>
+            </div>
+        </div>
+<!--         <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div> -->
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestras Playas</h3>
+    
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <!-- Añadir loading="lazy" para que conforme avanzamos en la pagina
+                        se vaya descargando acada una de las imagenes -->
+                    <picture>
+                        <!-- Podemos añadir webp formato de img mas ligero y un img
+                                dependeria del navegador cual mostrar qya que no es tan soportado -->
+                        <source srcset="./img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/blog1.jpg" alt="">
+                    </picture>
+                </div>
+    
+                <div class="entrada-contenido">
+                    <h4 class="no-margin">Playa la condesa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate sint iste
+                        voluptatem quos corporis consequatur fuga tempore, placeat vitae sed deserunt quis quaerat
+                        odio ab beatae itaque, maxime quibusdam!</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+    
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="./img/blog2.webp" alt="">
+                </div>
+    
+                <div class="entrada-contenido">
+                    <h4 class="no-margin">Playa Hornos</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate sint iste
+                        voluptatem quos corporis consequatur fuga tempore, placeat vitae sed deserunt quis quaerat
+                        odio ab beatae itaque, maxime quibusdam!</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+    
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="./img/blog3.webp" alt="">
+                </div>
+    
+                <div class="entrada-contenido">
+                    <h4 class="no-margin">Playa Caleta y Caletilla</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate sint iste
+                        voluptatem quos corporis consequatur fuga tempore, placeat vitae sed deserunt quis quaerat
+                        odio ab beatae itaque, maxime quibusdam!</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+        </main>
+   <!--      <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de extracción de Café</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                </li>
+    
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                </li>
+            </ul>
+        </aside> -->
+    
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Acapulco</h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="playas.html" class="navegacion__enlace">Playas</a>
+                    <a href="parques.html" class="navegacion__enlace">Parques</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body></html>
