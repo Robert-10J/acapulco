@@ -155,7 +155,7 @@ img { max-width: 100%; }
 }
 
 .boton--secundario {
-    background-color: var(--primario);
+    background-color: var(--color-principal);
 }
 
 .cursos {
@@ -163,11 +163,11 @@ img { max-width: 100%; }
 }
 
 .widget-curso {
-    border-bottom: 2px solid var(--gris);
-    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--color-secundario);
+    margin-bottom: 3rem;
 }
 
-.no-margin:last-of-type {
+.widget-curso:last-of-type {
     border: none;
     margin-bottom: 0;
 }
