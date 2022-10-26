@@ -1,6 +1,6 @@
 :root {
     --color-principal: #4361ee;
-    --color-secundario: #c1dff0;
+    --color-secundario: #caf0f8;
     --blanco: #fff;
 }
 
@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    background-color: #dad7cd;
     font-family: 'Open Sans';
     font-size: 1.6rem;
     line-height: 2;
@@ -76,9 +77,7 @@ img { max-width: 100%; }
     }
 }
 
-.logo {
-    color: var(--blanco);
-}
+.logo { color: var(--blanco); }
 
 .logo__nombre {
     font-weight: 800;
@@ -112,7 +111,7 @@ img { max-width: 100%; }
 }
 
 .entrada {
-    border-bottom: 2px solid var(--gris);
+    border-bottom: 2px solid var(--color-secundario);
     margin-top: 2rem;
 }
 
@@ -125,10 +124,9 @@ img { max-width: 100%; }
 .boton {
     display: block;
     /* Es block para que cuando se visualice en una pantalla pequeña tome todo el espacio dispobible */
-    font-family: var(--fuenteHeading);
     color: var(--blanco);
     text-align: center;
-    padding: 1rem 3rem;
+    padding: .5rem 2rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -151,11 +149,15 @@ img { max-width: 100%; }
 }
 
 .boton--primario {
-    background-color: var(--negro);
+    background-color: var(--color-principal);
+}
+.boton--primario:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
 }
 
 .boton--secundario {
-    background-color: var(--primario);
+    background-color: var(--color-secundario);
 }
 
 .cursos {
@@ -163,7 +165,7 @@ img { max-width: 100%; }
 }
 
 .widget-curso {
-    border-bottom: 2px solid var(--gris);
+    border-bottom: 2px solid var(--color-secundario);
     margin-bottom: 2rem;
 }
 
@@ -173,7 +175,6 @@ img { max-width: 100%; }
 }
 
 .widget-curso__label {
-    font-family: var(--fuenteHeading);
     font-weight: bold;
 }
 
@@ -204,7 +205,7 @@ img { max-width: 100%; }
 /* CURSOS */
 .curso {
     padding: 3rem 0;
-    border-bottom: 2px solid var(--gris);
+    border-bottom: 2px solid var(--color-secundario);
 }
 
 @media (min-width: 768px) {
@@ -219,19 +220,12 @@ img { max-width: 100%; }
     border: none;
 }
 
-.curso__label {
-    font-family: var(--fuenteHeading);
-    font-weight: bold;
-}
+.curso__label { font-weight: bold; }
 
-.curso__info {
-    font-weight: 400;
-}
+.curso__info { font-weight: 400; }
 
 .curso__label,
-.curso__info {
-    font-size: 2rem;
-}
+.curso__info { font-size: 2rem; }
 
 /* CONTACTO */
 .contacto-bg {
@@ -242,15 +236,15 @@ img { max-width: 100%; }
 }
 
 /* CONTACTO */
-.formulario {
+/* .formulario {
     background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    margin: -5rem auto 0 auto; */
     /* Da margin hacia arriba */
-    width: 95%;
+/*     width: 95%;
     padding: 5rem;
-}
+} */
 
-.campo {
+/* .campo {
     display: flex;
     margin-bottom: 2rem;
 }
@@ -268,4 +262,4 @@ img { max-width: 100%; }
 
 .campo__field--textarea {
     height: 20rem;
-}
+} */
