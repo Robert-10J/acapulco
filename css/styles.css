@@ -136,7 +136,7 @@ img { max-width: 100%; }
 }
 
 .boton:hover {
-    cursor: pointer;
+    playar: pointer;
 }
 
 @media (min-width: 768px) {
@@ -160,11 +160,9 @@ img { max-width: 100%; }
     background-color: var(--color-secundario);
 }
 
-.cursos {
-    list-style: none;
-}
+.playas { list-style: none; }
 
-.widget-curso {
+.widget-playa {
     border-bottom: 2px solid var(--color-secundario);
     margin-bottom: 2rem;
 }
@@ -174,18 +172,12 @@ img { max-width: 100%; }
     margin-bottom: 0;
 }
 
-.widget-curso__label {
-    font-weight: bold;
-}
+.widget-playa__label { font-weight: bold; }
 
-.widget-curso__info {
-    font-weight: 400;
-}
+.widget-playa__info { font-weight: 400; }
 
-.widget-curso__label,
-.widget-curso__info {
-    font-size: 2rem;
-}
+.widget-playa__label,
+.widget-playa__info { font-size: 2rem; }
 
 .footer {
     background-color: var(--color-principal);
@@ -202,30 +194,30 @@ img { max-width: 100%; }
     }
 }
 
-/* CURSOS */
-.curso {
+/* playaS */
+.playa {
     padding: 3rem 0;
     border-bottom: 2px solid var(--color-secundario);
 }
 
 @media (min-width: 768px) {
-    .curso {
+    .playa {
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
 }
 
-.curso:last-of-type {
+.playa:last-of-type {
     border: none;
 }
 
-.curso__label { font-weight: bold; }
+.playa__label { font-weight: bold; }
 
-.curso__info { font-weight: 400; }
+.playa__info { font-weight: 400; }
 
-.curso__label,
-.curso__info { font-size: 2rem; }
+.playa__label,
+.playa__info { font-size: 2rem; }
 
 /* CONTACTO */
 .contacto-bg {
