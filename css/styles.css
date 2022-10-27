@@ -2,6 +2,8 @@
     --color-principal: #4361ee;
     --color-secundario: #caf0f8;
     --blanco: #fff;
+    --negro: #000;
+    --color-curso: #4895ef;
 }
 
 html {
@@ -17,7 +19,7 @@ html {
 }
 
 body {
-    background-color: #dad7cd;
+    background-color: #fff1e6;
     font-family: 'Open Sans';
     font-size: 1.6rem;
     line-height: 2;
@@ -38,6 +40,10 @@ h4 { font-size: 2.8rem; }
 
 img { max-width: 100%; }
 
+img:hover{
+    transform: scale(1.3);
+}
+
 /* UTILIDADES */
 .no-margin { margin: 0; }
 .no-padding { padding: 0; }
@@ -45,7 +51,7 @@ img { max-width: 100%; }
 
 /* HEADER */
 .header {
-    background-image: url(../img/Acapulco-bahía.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../img/Acapulco-bahía.jpg);
     height: 45rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +67,7 @@ img { max-width: 100%; }
 
 @media (min-width: 768px) {
     .header__texto {
-        margin-top: 15rem;
+        margin-top: 12rem;
     }
 }
 
@@ -90,12 +96,12 @@ img { max-width: 100%; }
         gap: 2rem;
     }
 }
-
 .navegacion__enlace {
     display: block;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--blanco);
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -153,8 +159,12 @@ img { max-width: 100%; }
 }
 
 .boton--secundario {
-    background-color: var(--color-principal);
+    background-color: var(--color-curso);
+    color: var(--blanco);
+}
+.boton--secundario:hover{
     background-color: var(--color-secundario);
+    color: var(--color-principal);
 }
 
 .playas { list-style: none; }
