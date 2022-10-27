@@ -40,9 +40,7 @@ h4 { font-size: 2.8rem; }
 
 img { max-width: 100%; }
 
-img:hover{
-    transform: scale(1.3);
-}
+img:hover{ transform: scale(1.3); }
 
 /* UTILIDADES */
 .no-margin { margin: 0; }
@@ -103,6 +101,7 @@ img:hover{
     color: var(--blanco);
     font-weight: bold;
 }
+.navegacion__enlace:hover { color: var(--color-curso);}
 
 @media (min-width: 768px) {
     .contenido-principal {
@@ -263,4 +262,10 @@ img:hover{
     border: 2px solid var(--color-secundario);
     border-radius: 1rem;
     padding: 1rem;
+}
+
+.nombres {
+    color: #fff1e6;
+    font-weight: 600;
+    font-size: 2rem;
 }
