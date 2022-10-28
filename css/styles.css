@@ -61,6 +61,7 @@ img:hover{ transform: scale(1.3); }
 .header__texto {
     text-align: center;
     color: var(--blanco);
+    margin-top: 16rem;
 }
 
 @media (min-width: 768px) {
