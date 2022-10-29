@@ -1,31 +1,40 @@
-const nombre = document.getElementById('nombre');
-const email = document.getElementById('email');
+const nombreInp = document.getElementById('nombre');
+const emailInp = document.getElementById('email');
+const totalInp = document.getElementById('total');
 const form = document.querySelector('.formulario');
 
+let nombre = '';
+let email = '';
+let total = '';
+
 document.addEventListener('DOMContentLoaded', () => {
-
-    nombre.addEventListener('input', validateName);
-
-    email.addEventListener('input', e => {
-        console.log(e.target.value);
+    nombreInp.addEventListener('input', e => {
+        nombre = e.target.value;
     });
 
-    total.addEventListener('input', e => {
-        console.log(e.target.value);
+    emailInp.addEventListener('input', e => {
+        email = e.target.value;
+    });
+
+    totalInp.addEventListener('input', e => {
+        total = e.target.value;
     });
 
     form.addEventListener('submit', validateForm);
 });
 
-function validateName( e ) {
-
-    if( e.target.value === '' ) {
-        alert('Ingrese su nombre')
-        return;
-    }
-}
 
 function validateForm( e ) {
     e.preventDefault();
-    alert('Usted se ha inscrito a la actividad seleccionada')
+
+    if( nombre === '' && email === '' && total === '') {
+        alert('Ingrese todos los datos');
+        return;
+    }
+
+    alert('Se ha suscrito a la actividad seleccionada');
+
+    nombreInp.value = '';
+    emailInp.value = '';
+    totalInp.value = '';
 }
